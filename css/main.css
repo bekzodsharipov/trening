@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url('../fonts/BigShouldersDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: Black;
+}
+
+.hero {
+    padding-top: 10px;
+    padding-bottom: 36px;
+    background-color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hero__container {
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+}
+
+.hero__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    color: white;
+    margin-bottom: 23px;
+}
+
+.hero__top-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__top-title {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.hero__top-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+
+.hero__top-btn {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #191919;
+    display: flex;
+    align-items: center;
+    gap: 8.23px;
+    border: none;
+    background-color: #FFCE6C;
+    border-radius: 200px;
+    padding: 2.71px 3px 2.97px 15.67px;
+}
+
+.hero__speakerImg {
+    background-image: url(../images/bacround.avif);
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__speaker {
+    position: relative;
+    z-index: 15;
+    max-width: 305px;
+    width: 100%;
+    height: auto;
+}
+
+.hero__img {
+    cursor: pointer;
+}
+
+.hero__top-imgs {
+    background-color: #FFFFFF;
+    border-radius: 200px;
+    padding: 13.18px;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hero__title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 900;
+    font-style: Black;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 11px;
+}
+
+.hero__title>span {
+    color: #FFCE6C;
+}
+
+.hero__right {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    border: 2px solid #FFC771;
+    border-radius: 20px;
+    padding: 20px 15px 50px 15px;
+    max-width: 115px;
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    z-index: 10;
+    right: 30px;
+}
+
+.hero__right_list_item {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-style: Bold;
+    font-size: 11px;
+    line-height: 15px;
+    list-style: none;
+    letter-spacing: 3%;
+    color: white;
+    max-width: 90px;
+    margin-bottom: 5px;
+}
+
+.hero__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    z-index: 20;
+    position: relative;
+}
+
+.hero__center-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 3%;
+    text-align: center;
+    color: white;
+    max-width: 277px;
+    width: 100%;
+    margin-bottom: 14.7px;
+}
+
+.hero__center-btn {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #191919;
+    padding: 22.95px 86.66px;
+    border-radius: 15px;
+    background: linear-gradient(263.81deg, #FFC771 10.32%, #FFC858 98.17%),
+        linear-gradient(274.27deg, rgba(255, 255, 255, 0) -14.6%, rgba(255, 255, 255, 0.39) 39.52%, rgba(255, 255, 255, 0) 110.6%);
+    box-shadow: 19px 0px 25px 0px #FFFFFF1C inset;
+    box-shadow: 0px 2px 15px 0px #FFFFFF69 inset;
+    background: linear-gradient(263.81deg, #FBD293 10.32%, #FFD172 98.17%),
+        linear-gradient(0deg, rgba(131, 93, 19, 0.36), rgba(131, 93, 19, 0.36));
+    cursor: pointer;
+    border: none;
+    backdrop-filter: blur(62px);
+
+}
+
+
+.description {
+    padding-bottom: 29px;
+    background-color: #000000;
+}
+
+.description__container {
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.description__title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 900;
+    font-style: Black;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color: white;
+}
+
+.description__row {}
+
+.description__col {
+    background-color: #4B4B4B;
+    border: 1px solid #FFCE6C;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+    gap: 10px;
+    padding: 7px 19px 7px 7px;
+}
+
+.description__col-imgs {
+    background-color: white;
+    border-radius: 15px;
+    width: 74px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11.97px 11.86px 12.26px 11.86px;
+}
+
+.two {
+    padding: 16.3px 16.19px 16.6px 16.19px;
+}
+
+.three {
+    padding: 12.6px 15.76px 12.89px 15.76px;
+}
+
+.description__col_text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+
+.training {
+    padding-bottom: 73px;
+    background-color: #000000;
+}
+
+.training__container {
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.training__title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 900;
+    font-style: Black;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 33px;
+}
+
+.training__box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 17px 20px 16.84px 17px;
+    margin-bottom: 14.79px;
+}
+
+.training__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    transition: margin-bottom 0.3s ease;
+}
+
+.training__box.active .training__card {
+    margin-bottom: 14px;
+}
+
+
+.training__card-title {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #191919;
+}
+
+.training__card-img {
+    cursor: pointer;
+}
+
+.training__info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.training__min-card {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+}
+
+.training__info-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: black;
+}
+
+.training__borders {
+    border: 0.5px solid #000000;
+    margin-bottom: 7px;
+}
+
+
+.our {
+    padding-bottom: 12px;
+    background-color: #000000;
+}
+
+.our__container {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.our__title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 900;
+    font-style: Black;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 390px;
+}
+
+.logo-marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    max-width: 100%;
+    padding-block: 12px;
+    margin-bottom: 20px;
+}
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    width: max-content;
+    will-change: transform;
+    animation: scroll-x linear infinite;
+    animation-duration: 22s;
+    /* tezlik */
+}
+
+.logo-marquee:nth-of-type(2) .marquee-track {
+    animation-direction: reverse;
+    /* ikkinchisi teskari aylansin */
+}
+
+.slide {
+    flex: 0 0 auto;
+}
+
+.slide img {
+    display: block;
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    filter: saturate(0.9);
+    transition: transform 0.2s ease;
+}
+
+.slide img:hover {
+    transform: scale(1.06);
+}
+
+.logo-marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-x {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 640px) {
+    .marquee-track {
+        gap: 28px;
+        animation-duration: 18s;
+    }
+
+    .slide img {
+        height: 40px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+        animation: none;
+    }
+}
+
+.logo-marquee:nth-of-type(2) .marquee-track {
+    animation-direction: reverse;
+}
+
+
+@media (max-width:768px) {
+    .hero__top-title {
+        font-size: 11px;
+        text-align: left;
+    }
+
+    .hero__top-text {
+        font-size: 10px;
+    }
+
+    .hero__top-btn {
+        padding: 2.51px 3px 2.57px 12.67px;
+    }
+
+    .hero__title {
+        font-size: 45px;
+    }
+
+    .hero__speaker {
+        max-width: 280px;
+    }
+
+    .hero__right_list_item {
+        font-size: 10px;
+    }
+
+    .description__title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .description__col_text {
+        font-size: 14px;
+        line-height: 110%;
+    }
+
+    .description__col-imgs {
+        width: 70px;
+        height: 70px;
+    }
+
+    .description__col {
+        margin-bottom: 14px;
+    }
+
+    .training__info-text {
+        font-size: 15px;
+    }
+
+    .training {
+        padding-bottom: 25px;
+    }
+
+    .training__title {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+}
