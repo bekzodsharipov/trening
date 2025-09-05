@@ -34,6 +34,14 @@
 
 @font-face {
     font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: Poppins;
     src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
@@ -65,7 +73,6 @@
     max-width: 390px;
     margin-left: auto;
     margin-right: auto;
-
     position: relative;
 }
 
@@ -102,7 +109,6 @@
     line-height: 100%;
     letter-spacing: 0%;
 }
-
 
 .hero__top-btn {
     font-family: Poppins, sans-serif;
@@ -179,9 +185,9 @@
 }
 
 .hero__right {
-    background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(50px);
     border: 2px solid #FFC771;
+    background-color: transparent   ;
     border-radius: 20px;
     padding: 20px 15px 50px 15px;
     max-width: 115px;
@@ -225,6 +231,7 @@
     text-align: center;
     color: white;
     max-width: 277px;
+    background: linear-gradient(179.89deg, rgba(3, 1, 2, 0) 3.87%, #030102 59.84%);
     width: 100%;
     margin-bottom: 14.7px;
 }
@@ -241,18 +248,14 @@
     color: #191919;
     padding: 22.95px 86.66px;
     border-radius: 15px;
-    background: linear-gradient(263.81deg, #FFC771 10.32%, #FFC858 98.17%),
-        linear-gradient(274.27deg, rgba(255, 255, 255, 0) -14.6%, rgba(255, 255, 255, 0.39) 39.52%, rgba(255, 255, 255, 0) 110.6%);
+    background: linear-gradient(263.81deg, #FFC771 10.32%, #FFC858 98.17%), linear-gradient(274.27deg, rgba(255, 255, 255, 0) -14.6%, rgba(255, 255, 255, 0.39) 39.52%, rgba(255, 255, 255, 0) 110.6%);
     box-shadow: 19px 0px 25px 0px #FFFFFF1C inset;
     box-shadow: 0px 2px 15px 0px #FFFFFF69 inset;
-    background: linear-gradient(263.81deg, #FBD293 10.32%, #FFD172 98.17%),
-        linear-gradient(0deg, rgba(131, 93, 19, 0.36), rgba(131, 93, 19, 0.36));
+    background: linear-gradient(263.81deg, #FBD293 10.32%, #FFD172 98.17%), linear-gradient(0deg, rgba(131, 93, 19, 0.36), rgba(131, 93, 19, 0.36));
     cursor: pointer;
     border: none;
     backdrop-filter: blur(62px);
-
 }
-
 
 .description {
     padding-bottom: 29px;
@@ -314,13 +317,12 @@
 .description__col_text {
     font-family: Poppins, sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: Regular;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
     color: white;
 }
-
 
 .training {
     padding-bottom: 73px;
@@ -366,7 +368,6 @@
     margin-bottom: 14px;
 }
 
-
 .training__card-title {
     font-family: Poppins, sans-serif;
     font-weight: 700;
@@ -391,8 +392,9 @@
 
 .training__min-card {
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 5px;
+    margin-bottom: 15px;
 }
 
 .training__info-text {
@@ -400,7 +402,6 @@
     font-weight: 500;
     font-style: Medium;
     font-size: 16px;
-    margin-bottom: 15px;
     line-height: 100%;
     letter-spacing: 0%;
     color: black;
@@ -411,16 +412,9 @@
     margin-bottom: 7px;
 }
 
-
 .our {
     padding-bottom: 12px;
     background-color: #000000;
-}
-
-.our__container {
-    
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .our__title {
@@ -436,6 +430,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 390px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .logo-marquee {
@@ -516,7 +512,6 @@
     animation-direction: reverse;
 }
 
-
 @media (max-width:768px) {
     .hero__top-title {
         font-size: 11px;
@@ -527,6 +522,9 @@
         font-size: 10px;
     }
 
+    .training__min-card {
+        display: flex;
+    }
     .hero__top-btn {
         padding: 2.51px 3px 2.57px 12.67px;
     }
